@@ -1,0 +1,115 @@
+﻿body {
+    min-height: 100vh;
+    background-image: url('images/loginpg.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.login-form {
+    position: relative;
+    top: 500px;
+    left: -550px;
+    transform: translateY(-50%);
+    width: 400px;
+    height: 420px;
+    margin: 0 auto;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 20px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 5%;
+}
+
+    .login-form h1 {
+        color: rgba(255, 255, 255, 0.8);
+        margin: 0 0 20px 0;
+        text-align: center;
+    }
+
+.Iusername,
+.Ipassword {
+    width: 90%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    font: inherit;
+    color: #fff;
+    background-color: transparent;
+    outline: 2px solid #fff;
+}
+
+.Iusername{
+    margin-bottom: 100px;
+}
+
+.Ipassword{
+    margin-bottom: 20px;
+}
+.btnlogin{
+    margin-top:60px
+}
+.btnlogin, .btnreg {
+    border-radius: 15px;
+    width: 100%;
+    height: 35px;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 1px;
+    cursor: pointer;
+}
+
+    .btnlogin:hover,.btnreg:hover {
+        background-color: rgb(0, 0, 0);
+        color: rgba(255, 255, 255, 0.8);
+        font-weight: bold;
+    }
+
+.btnlogin {
+    margin-bottom: 19px;
+}
+
+.lblusername, .lblpw {
+    position: absolute;
+    transform: translate(10px, 10px);
+    transition: transform .25s;
+    color: rgba(255, 255, 255, 0.8);
+}
+.lblusername {
+    top: 72px;
+    left: -80px;
+}
+
+.lblpw {
+    top: 210px;
+    left: -180px;
+}
+
+
+.Iusername:focus + .lblusername,
+.Iusername:valid + .lblusername,
+.Ipassword:focus + .lblpw,
+.Ipassword:valid + .lblpw {
+    font-weight: bold;
+    font-size: 20px;
+    padding-inline: 5px;
+    color: rgba(255, 255, 255, 0.8);
+    background-color: black;
+    border-radius: 4px;
+}
+
+.Iusername:focus + .lblusername,
+.Iusername:valid + .lblusername {
+    transform: translate(90px, -5px) scale(0.8);  
+}
+.Ipassword:focus + .lblpw,
+.Ipassword:valid + .lblpw {
+    transform: translate(200px, -8px) scale(0.8);
+}
+
+.lblerror{
+    position: relative;
+    right: -10px;
+    color: red;
+}

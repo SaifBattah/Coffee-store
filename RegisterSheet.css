@@ -1,0 +1,239 @@
+﻿body {
+    min-height: 100vh;
+    background-image: url('images/loginpg.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.Reg-container {
+    position: fixed;
+    top: 50px;
+    left: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 5px;
+    border-radius: 5px;
+    padding: 16px;
+    width: 700px;
+    height: 820px;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.bar1, .bar2, .bar3, .bar4, .bar5 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 20px 0;
+    left: 90px;
+}
+
+.Lblfname, .Lbllname, .Lbluname, .Lblemail, .Lblgender, .Lblbd, .Lblphonenumber, .Lblpw, .Lblrepw, .message {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 20px;
+    font-family: 'Pacifico', cursive;
+}
+
+    .Lblfname:hover, .Lbllname:hover, .Lbluname:hover,
+    .Lblemail:hover, .Lblgender:hover, .Lblbd:hover, .Lblphonenumber:hover, .Lblpw:hover, .Lblrepw:hover {
+        cursor: pointer;
+        font-weight: bold;
+        transition: font-weight 0.42s;
+    }
+
+.bar1 {
+    position: fixed;
+    top: 80px;
+}
+
+    .bar1 .fname {
+        margin-right: 50px;
+    }
+
+    .bar1 .Lblfname, .bar1 .Lbllname {
+        margin-right: 10px;
+    }
+
+
+.bar2 {
+    position: fixed;
+    top: 200px;
+}
+
+    .bar2 .uname {
+        margin-left: 1px;
+        margin-right: 50px;
+    }
+
+    .bar2 .Lblemail {
+        margin-right: 60px;
+    }
+
+    .bar2 .Lbluname {
+        margin-right: 10px;
+    }
+
+.bar3 {
+    position: fixed;
+    top: 320px;
+}
+
+    .bar3 .Lblgender {
+        margin-right: 48px;
+    }
+
+    .bar3 .Gender {
+        width: 480px;
+        background-color: transparent;
+        border-radius: 5px;
+        height: 40px;
+        color: white;
+        border-bottom: none;
+        cursor: pointer;
+    }
+
+        .bar3 .Gender option {
+            color: black;
+        }
+
+.bar4 {
+    position: fixed;
+    top: 440px;
+}
+
+    .bar4 .Lblbd {
+        margin-right: 15px;
+    }
+
+    .bar4 input[type="date"] {
+        margin-right: 80px;
+    }
+
+    .bar4 .Lblphonenumber {
+        margin-left: 30px;
+        margin-right: 19px;
+    }
+
+.bar5 {
+    position: fixed;
+    top: 560px;
+}
+
+    .bar5 .Lblpw {
+        margin-right: 29px;
+    }
+
+    .bar5 .Lblrepw {
+        margin-left: 50px;
+        margin-right: 35px;
+    }
+
+.bar6 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 20px 0;
+    position: fixed;
+    top: 680px;
+    left: 245px;
+    color: red;
+}
+
+.bar7 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: fixed;
+    top: 800px;
+    left: 100px;
+}
+
+    .bar7 .btnreg {
+        width: 640px;
+        height: 50px;
+        background-color: rgba(127,255,212,0.8);
+        font-size: 18px;
+        border-radius: 5px;
+    }
+
+        .bar7 .btnreg:hover {
+            font-size: 24px;
+            height: 55px;
+            width: 645px;
+            color: rgb(127,255,212);
+            background-color: black;
+            cursor: pointer;
+            transition: background-color 0.42s, color 0.42s, width 0.42s, height 0.42s,font-size 0.42s;
+        }
+
+.bar1, .bar2, .bar3, .bar4, .bar5, .bar6, .bar7 {
+}
+
+    .bar1 .fname, .bar1 .lname, .bar2 .uname, .bar2 .email, .bar4 .phonenumber, .bar5 .pw, .bar5 .repw {
+        color: white;
+        height: 30px;
+        background-color: transparent;
+        border-color: rgba(255,255,255,.8);
+        border-top: none;
+        border-right: none;
+        border-left: none;
+        border-radius: 1px;
+    }
+
+        .bar1 .fname:hover, .bar1 .lname:hover, .bar2 .uname:hover, .bar2 .email:hover,
+        .bar4 .phonenumber:hover, .bar5 .pw:hover, .bar5 .repw:hover {
+            border-color: black;
+            background-color: rgba(255,255,255,.6);
+            color: black;
+            cursor: pointer;
+            transition: background-color 0.92s, color 0.92s;
+        }
+
+.fnerr {
+    position: absolute;
+    top: 40px;
+    color: red;
+    font-weight: bold;
+}
+
+.lnerr {
+    position: absolute;
+    top: 40px;
+    right: 0;
+    color: red;
+    font-weight: bold;
+}
+
+.unerr {
+    position: absolute;
+    top: 40px;
+    right: 200px;
+    color: red;
+    font-weight: bold;
+}
+
+.emailerr {
+    position: absolute;
+    top: 40px;
+    right: 25px;
+    color: red;
+    font-weight: bold;
+}
+
+.pnerr {
+    position: absolute;
+    top: 40px;
+    right: 80px;
+    color: red;
+    font-weight: bold;
+}
+
+.pwerr {
+    position: absolute;
+    top: 50px;
+    right: 80px;
+    color: red;
+    font-weight: bold;
+}
